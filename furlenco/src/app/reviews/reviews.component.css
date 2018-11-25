@@ -1,0 +1,31 @@
+.main-container{
+  padding: 15px;
+  display:flex;
+  width: 80%;
+  min-height: 100px;
+}
+img{
+  width: 60px;
+  height: 60px;
+  border-style: solid;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border-width: 1px;
+}
+.img-icon{
+  content: url("../../assets/star.png");
+  border-style: none;
+  width: 15px;
+  height: 15px;
+}
+.image-container{
+  display: inline-block;
+}
+.text-container{
+  display: block;
+  margin-left: 2%;
+}
+span{
+  display: block;
+}

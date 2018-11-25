@@ -1,0 +1,16 @@
+.container-box{
+margin: 0 5% 0 5%;
+}
+
+.container{
+  width: 80%;
+  margin-left: 5%;
+  height: auto;
+}
+
+.result-span{
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+}
+

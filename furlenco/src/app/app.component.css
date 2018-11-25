@@ -1,0 +1,10 @@
+.text-logo{
+  width: 100%;
+  font-size: 45px;
+  cursor: pointer;
+  font-weight: 900;
+  height: 30%;
+  text-align: center;
+  border-bottom: solid 2px #dadada;
+  margin-bottom: 2%;
+}

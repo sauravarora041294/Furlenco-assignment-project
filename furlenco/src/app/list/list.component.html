@@ -1,0 +1,10 @@
+<div class="container-box">
+  <div *ngIf="restaurantData" class="container">
+    <span class="result-span">Showing Restaurants in {{location}}</span>
+      <div *ngIf="restaurantData['best_rated_restaurant'].length">
+        <div *ngFor="let options of restaurantData['best_rated_restaurant']">
+          <app-list-row [options]="options" [location]="location"></app-list-row>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="item" (click)="openDetails(options['restaurant']['id'])">
+  <img src="{{options['restaurant']['thumb']}}">
+  <div class="item-name">
+    <span class="name-span">{{options['restaurant']['name']}}</span>
+    <span class="location-span"> {{options['restaurant']['location']['locality_verbose']}} </span>
+    <span class="text-span-rating">{{options['restaurant']['user_rating']['aggregate_rating']}}
+      ( {{options['restaurant']['user_rating']['votes']}} votes)</span>
+  </div>
+  <div class="like-span" *ngIf="likeFlag" (click)="toggle($event)">
+    <img class="unlike-img">
+  </div>
+  <div class="like-span" *ngIf="!likeFlag" (click)="toggle($event)">
+    <img class="like-img">
+  </div>
+  <span class="cuisine-span">{{options['restaurant']['cuisines']}} </span>
+  <span class="text-span">Average Cost for two: </span>
+  <span class="text-span-cost">{{options['restaurant']['currency']}}{{options['restaurant']['average_cost_for_two']}}</span>
+</div>

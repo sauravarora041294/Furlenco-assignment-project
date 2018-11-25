@@ -1,0 +1,40 @@
+<div class="box-container" *ngIf="RestaurantData && reviewsData">
+<div class="main-container">
+  <img src="{{RestaurantData['featured_image']}}">
+</div>
+<div class="item-name">
+  <h3>{{RestaurantData['name']}}</h3>
+  <span class="like-span" *ngIf="!likeFlag" (click)="toggle($event)"><img class="like-img"></span>
+  <span class="like-span" *ngIf="likeFlag" (click)="toggle($event)"><img class="unlike-img"></span>
+  <div class="section-main">
+   <img class="img-icon">
+    <span class="val-span">{{RestaurantData['user_rating']['aggregate_rating']}}
+      ( {{RestaurantData['user_rating']['votes']}} votes)</span>
+  </div>
+</div>
+<div class="section-main">
+  <span class="head-span">Cost for 2 </span>
+  <span class="val-span">{{RestaurantData['currency']}}{{RestaurantData['average_cost_for_two']}}</span>
+</div>
+<div class="section-main">
+  <span class="head-span">Address</span>
+  <span class="val-span">{{RestaurantData['location']['address']}}-{{RestaurantData['location']['zipcode']}}</span>
+</div><hr>
+  <div class="section-main">
+    <span class="head-span">Cuisines</span>
+    <span class="val-span">{{RestaurantData['cuisines']}}</span>
+  </div>
+<div class="section-main">
+  <span class="head-span"><a href="{{RestaurantData['photos_url']}}">Photos</a></span>
+  <span class="val-span"></span>
+</div>
+<div class="section-main">
+  <span class="head-span"><a href="{{RestaurantData['menu_url']}}">Menu</a></span>
+</div>
+<div class="section-main">
+  <span class="head-span">Ratings ({{reviewsData['reviews_count']}} Reviews)</span>
+  <div *ngFor="let reviews of reviewsData['user_reviews']">
+      <app-reviews [review]="reviews"></app-reviews>
+  </div>
+</div>
+</div>

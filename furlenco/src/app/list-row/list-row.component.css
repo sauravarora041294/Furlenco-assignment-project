@@ -1,0 +1,82 @@
+.item{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border: 3px solid #dadada;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 5px 4px whitesmoke;
+}
+.item:hover{
+  cursor: pointer;
+  box-shadow: 5px 4px #d0d0d0;
+}
+.item-name{
+  position: relative;
+  margin-left: 16%;
+}
+.item:first-child{
+  margin-top: 10px;
+}
+span{
+  margin: 5px 0 2px 0;
+}
+img {
+  position: relative;
+  width: 220px;
+  height: 100%;
+  float: left;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.name-span{
+  font-size: 23px;
+  color: #000;
+  display: block;
+  font-weight: 800;
+}
+.text-span{
+  font-size: 18px;
+  color: gray;
+  display: block;
+  font-weight: 800;
+}
+.text-span-rating{
+  font-size: 18px;
+  color: #19ad00;
+  display: block;
+  font-weight: 800;
+}
+.cuisine-span{
+  font-size: 16px;
+  display: block;
+}
+.location-span{
+  font-family: cursive;
+  color: gray;
+}
+.text-span-cost{
+  font-size: 18px;
+  color: #000;
+  display: block;
+  font-weight: 800;
+}
+.like-span{
+  float: right;
+  padding: 10px;
+  width: 40px;
+}
+.like-img{
+  content: url('../../assets/unlike.jpg');
+  height: 30px;
+  width: 30px;
+}
+.unlike-img{
+  content: url('../../assets/like.png');
+  height: 30px;
+  width: 30px;
+}

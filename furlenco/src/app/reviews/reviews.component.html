@@ -1,0 +1,11 @@
+<div class="main-container">
+  <div class="image-container">
+      <img src="{{review['review']['user']['profile_image']}}">
+  </div>
+  <div class="text-container">
+    <span>{{review['review']['user']['name']}}</span>
+    <img class="img-icon" *ngFor="let i of getArray(review['review']['rating'])">
+    <span class="text-span">{{review['review']['rating_text']}}</span>
+    <span class="review-span">{{review['review']['review_text']}}</span>
+  </div>
+</div>
